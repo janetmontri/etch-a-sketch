@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   <link href="https://fonts.googleapis.com/css2?family=Michroma&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Michroma&family=Reenie+Beanie&family=Roboto&display=swap" rel="stylesheet">
     <link href="/etch-a-sketch/style.css" rel="stylesheet" type="text/css" />
     <script src="/etch-a-sketch/script.js" async></script>
     <title>Etch-A-Sketch</title>
@@ -14,14 +14,30 @@
       <div class="item main">
           
         <input type="button" onclick="promptForNumber()" value="Start!" />
-        <h3>Writing Medium:</h3>
-        <p><input type="radio" onclick="colorCell(graphite)" value="graphite"">Color Pencil</input></p>
-        <p><input type="radio" onclick="colorCell(black)" value="black"">Pen</input></p>
-        <p><input type="radio" onclick="colorCell(rainbow)" value="rainbow"">Rainbow Magic Marker</input></p>
+        <ul>
+            <li>
+                <a href="#">
+                    <input type = "color" id="color-pencil" name="color-pencil" value="#00BFFF">
+            <label for="color-pencil">Draw with a Color Pencil
+            </label>
+        </a>
+    </li>
+
+            <li>
+                <a href="#">
+                    <input type="color" id="pen" name="pen" value="#B22222">
+            <label for="pen">Draw with a Pen</label>
+        </a></li>
+            <li><a href="#"><input type="color" id="rainbow-magic-marker" name="rainbow-magic-marker" value="#6GIL57">
+            <label for="rainbow-magic-marker">Draw with a<br>Rainbow Magic Marker</label></a></li>
+        </ul>
+        <!-- <p><input type="radio" onclick="colorCell(graphite)" value="graphite"">Color Pencil</input></p> -->
+        <!-- <p><input type="radio" onclick="colorCell(black)" value="black"">Pen</input></p> -->
+        <!-- <p><input type="radio" onclick="colorCell(rainbow)" value="rainbow"">Rainbow Magic Marker</input></p> -->
 
       </div>
       <div class="item squares"></div>
-      <div class="item paper-type">Paper Type</div>
+      <div class="item paper-type">Choose a background color</div>
       <div class="item footer custom-shape-divider-bottom-1602788252">
         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
             <path d="M1200,0H0V120H281.94C572.9,116.24,602.45,3.86,602.45,3.86h0S632,116.24,923,120h277Z" class="shape-fill"></path>

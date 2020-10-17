@@ -5,12 +5,12 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: auto 250px 450px auto;
-  grid-template-rows: 100px 450px auto;
+  grid-template-columns: auto 250px 600px auto;
+  grid-template-rows: 15% 600px auto;
   grid-template-areas:
     ". header header ."
     ". main squares ."
-    ". main menu ."
+    ". main paper-type ."
     ". footer footer .";
   column-gap: 10px;
   row-gap: 10px;
@@ -22,6 +22,7 @@ body {
   grid-area: header;
   font-family: "Michroma", sans-serif;
   font-size: 3em;
+  line-height: 3em;
 }
 
 .main {
@@ -35,14 +36,13 @@ body {
   grid-area: squares;
   display: grid;
   border: 1px gray solid;
-
   width: 100%;
   height: 100%;
   background-color: white;
 }
 
-.menu {
-  grid-area: menu;
+.paper-type {
+  grid-area: paper-type;
   font-size: 1.25em;
 }
 
@@ -51,9 +51,11 @@ body {
 }
 
 .cell {
-  border: 1px solid gray;
+  border: 1px solid #cad5db;
   width: 100%;
   height: 100%;
+  background: var(--cell-background-color);
+  /* opacity: var(--cell-opacity); */
 }
 
 .custom-shape-divider-bottom-1602788252 {

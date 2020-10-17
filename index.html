@@ -12,10 +12,16 @@
     <div class="container">
       <div class="item header">Etch-A-Sketch</div>
       <div class="item main">
-        <input type="button" onclick="promptForNumber()" value="click me" />
+          
+        <input type="button" onclick="promptForNumber()" value="Start!" />
+        <h3>Writing Medium:</h3>
+        <p><input type="radio" onclick="colorCell(graphite)" value="graphite"">Color Pencil</input></p>
+        <p><input type="radio" onclick="colorCell(black)" value="black"">Pen</input></p>
+        <p><input type="radio" onclick="colorCell(rainbow)" value="rainbow"">Rainbow Magic Marker</input></p>
+
       </div>
       <div class="item squares"></div>
-      <div class="item menu">menu goes here</div>
+      <div class="item paper-type">Paper Type</div>
       <div class="item footer custom-shape-divider-bottom-1602788252">
         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
             <path d="M1200,0H0V120H281.94C572.9,116.24,602.45,3.86,602.45,3.86h0S632,116.24,923,120h277Z" class="shape-fill"></path>
